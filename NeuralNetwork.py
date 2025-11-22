@@ -12,7 +12,7 @@ mnist = tf.keras.datasets.mnist
 x_train = x_train/255.0
 x_test = x_test/255.0
 
-#Creating the actual models
+#Creating the actual model
 model = tf.keras.models.Sequential()
 model.add(tf.keras.layers.Flatten(input_shape=(28,28)))
 model.add(tf.keras.layers.Dense(128, activation = 'relu'))
